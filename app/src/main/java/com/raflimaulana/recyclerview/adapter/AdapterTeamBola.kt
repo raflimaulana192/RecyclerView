@@ -23,7 +23,7 @@ class AdapterTeamBol(private val context : Context,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = data?.get(position)
         holder.foto.setImageResource(item?.foto ?:0)
-        holder.nama.text = item?.nama
+        holder.nama.text = item?.name
 
         holder.itemView.setOnClickListener {
             itemclick.detailData(item)
